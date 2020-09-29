@@ -1,22 +1,39 @@
-
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
 #include <iostream>
  
+int main()
+{
+    // Переменная count хранит текущее число для вывода 
+    int count = 1; // начинаем с 1
  
-using namespace std;
+    // Повторение операции (цикл) до тех пор, пока count не будет равен 100
+    while (count <= 100)
+    {
+        std::cout << count << " "; // вывод текущего числа 
  
-int main(int argc, char** argv) {
+        // Если count делится на 20 без остатка, то вставляем разрыв строки и продолжаем с новой строки
+        if (count % 20 == 0)
+            std::cout << "\n";
  
-int a, b, c;
+        count = count + 1; // переходим к следующему числу
+    } // конец while
  
-cout << "Input first number" << endl;
-cin >> a;
- 
-cout << "Input second number" << endl;
-cin >> b;
- 
-c = a + b;
- 
-cout << "Sum " << c << endl;
- 
-return 0;
+    return 0;
 }
