@@ -1,9 +1,22 @@
-#include <iostream>
-#include <cstdlib> // для system
-using namespace std;
 
-int main() 
-{ 
-    cout << "Hello, world!" << endl;
-    return 0; 
+#include <iostream>
+ 
+ 
+using namespace std;
+ 
+int main(int argc, char** argv) {
+ 
+int a, b, c;
+ 
+cout << "Input first number" << endl;
+cin >> a;
+ 
+cout << "Input second number" << endl;
+cin >> b;
+ 
+c = a + b;
+ 
+cout << "Sum " << c << endl;
+ 
+return 0;
 }
